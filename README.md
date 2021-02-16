@@ -1,6 +1,17 @@
 # Doc Linvix
 
-Este documento contẽm a documentação básica da API para geração de documentos fiscais (NFe e NFCe) desenvolvido para a Linvix 
+Este documento contẽm a documentação básica da API para geração de documentos fiscais (NFe e NFCe) desenvolvido para a Linvix.
+
+## Infra-estrutura 
+- Lumen Framework
+- Instalação em ambiente de vps (nuvem)
+- Segurança por token (JWT)
+- Banco de dados Postgres ou MySql ou MSSQL (UTF8)
+- Padrão HTTP Restful (json UTF8)
+- Linguagem de programação PHP 7.4/8.0
+- Ambiente Linux (Debian 10)
+- Modelagem da base de dados usando o padrão “Eloquent” (Lumen)
+
 
 ## Estrutura de ROTAS de acesso a API
 
