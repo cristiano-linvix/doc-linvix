@@ -37,7 +37,7 @@ Este documento contẽm a documentação básica da API para geração de docume
 |csc|string(150)||NULL|Código de Segurança do Contribuinte|
 |cscid|string(6)||NULL|Número de controle do CSC|
 |endereco|string(60)|||Logradoudo do endereço do emitente (conforme registro na receita)|
-|Número|string(60)|||Número do endereço do emitente (conforme registro na receita)|
+|numero|string(60)|||Número do endereço do emitente (conforme registro na receita)|
 |complemento|string(60)||NULL|Complemento do endereço do emitente (conforme registro na receita)|
 |bairro|string(60)|||Bairro do endereço do emitente  (conforme registro na receita)|
 |municipio|string(60)|||Nome do Municipio do endereço do emitente  (conforme registro na receita)|
