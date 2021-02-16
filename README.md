@@ -20,8 +20,6 @@ Este documento contẽm a documentação básica da API para geração de docume
 ### Controle dos Emitentes
 
 - Os emitentes deverão ser criados pelo sistema ERP, e seus dados lançados nessa tabela da base de dados da API.
-- Esta rota é protegida por um token unico de controle da SOFTHOUSE, que é criado durante o processo de configuração, usando a linha de comando artisan. Caso esse comando artisan seja usado novamente, um NOVO token de softhouse será gerado e o anterior perderá a validade.
-- Este token (de softhouse) será usado exclusivamente para criar ou recriar os tokens dos emitente e será passado no header da chamada HTTP.
 
 **Tabela Emitentes**
 
@@ -59,15 +57,19 @@ Este documento contẽm a documentação básica da API para geração de docume
 |:---:|:---:|:---|
 |/token/{id}|GET|Rota para criação e registro do TOKEN do emitente|
 
-Esta rota token, espera que todos os dados do emitente estejam disponíveis na tabela, inclusive o certificado A1.
+- Esta rota é protegida por um token unico de controle da SOFTHOUSE, que é criado durante o processo de configuração, usando a linha de comando artisan. Caso esse comando artisan seja usado novamente, um NOVO token de softhouse será gerado e o anterior perderá a validade.
 
-O id indicado na rota, refere-se ao ID da tabela 'emitentes'.
+- Este token (de softhouse) será usado exclusivamente para criar ou recriar os tokens dos emitente e será passado no header da chamada HTTP.
+
+- Esta rota token, espera que todos os dados do emitente estejam disponíveis na tabela, inclusive o certificado A1.
+
+- O id indicado na rota, refere-se ao ID da tabela 'emitentes'.
 
 *NOTA: Caso não exista o certificado ou o mesmo esteja vencido o token NÃO SERÁ criado !!*
 
-Esse token, será passado no header das chamadas HTTP e identifica o emitente na API.
+- O token gerado por essa rota, será passado no header das chamadas HTTP e identifica o emitente na API.
 
-Novas chamadas a esta rota irão RECRIAR o token e dasativar o token gerado anteriormente.
+- Novas chamadas a esta rota irão RECRIAR o token e dasativar o token gerado anteriormente.
 
 
 ### Rotas da NFe
