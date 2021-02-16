@@ -1,2 +1,1 @@
-# Rota OFFLINE
-
+# Rota OFFLINE (NFCe (65) apenas)

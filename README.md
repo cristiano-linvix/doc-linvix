@@ -75,7 +75,7 @@ php artisan token:create
 
 |Rota|Método|Descrição|
 |:---:|:---:|:---|
-|/token/{id}|GET|Rota para criação e registro do TOKEN do emitente|
+|[/token/{id}](TOKEN.md)|GET|Rota para criação e registro do TOKEN do emitente|
 
 - Esta rota é protegida por um token unico de controle da SOFTHOUSE, que é criado durante o processo de configuração, usando a linha de comando artisan. Caso esse comando artisan seja usado novamente, um NOVO token de softhouse será gerado e o anterior perderá a validade.
 
@@ -97,14 +97,14 @@ Todas as operações com NFe são processadas pelas chamadas aqui descritas.
 
 |Rota|Método|Descrição|
 |:---|:---:|:---|
-|/nfe/situacao|POST|Busca o status da Sefaz autorizadora|
-|/nfe/consultar|POST|Consulta o registo na base de dados e se necessário o recibo ou chave da NFe na SEFAZ|
-|/nfe/pdf|POST|Cria o PDF da DANFE|
-|/nfe/emitir|POST|Cria a NFe ASSINCRONO, requer consulta posterior|
-|/nfe/cancelar|POST|Solicita o cancelamento da NFe|
-|/nfe/inutilizar|POST|Solicita a inutilização de faixa de Números|
-|/nfe/corrigir|POST|Solicita a Carta de Correção|
-|/nfe/manfestar|POST|Solicita a manifestação de Destinatário|
+|[/nfe/situacao](SITUACAO.md)|POST|Busca o status da Sefaz autorizadora|
+|[/nfe/consultar](CONSULTAR.md)|POST|Consulta o registo na base de dados e se necessário o recibo ou chave da NFe na SEFAZ|
+|[/nfe/pdf](PDF.md)|POST|Cria o PDF da DANFE|
+|[/nfe/emitir](EMITIR.md)|POST|Cria a NFe ASSINCRONO, requer consulta posterior|
+|[/nfe/cancelar](CANCELAR.md)|POST|Solicita o cancelamento da NFe|
+|[/nfe/inutilizar](INUTILIZAR.md)|POST|Solicita a inutilização de faixa de Números|
+|[/nfe/corrigir](CORRIGIR.md)|POST|Solicita a Carta de Correção|
+|[/nfe/manfestar](MANIFESTAR.md)|POST|Solicita a manifestação de Destinatário|
 
 
 ### Rotas da NFCe
@@ -113,14 +113,14 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
 
 |Rota|Método|Descrição|
 |:---|:---:|:---|
-|/nfce/situacao|POST|Busca o status da Sefaz autorizadora|
-|/nfce/consultar|POST|Consulta o registo na base de dados e se necessário o recibo ou chave da NFCe na SEFAZ|
-|/nfce/pdf|POST|Cria o PDF da DANFCE|
-|/nfce/offline|POST|Processa as NFCe emitidas em contingência OFFLINE, enviando todas as NFCe pendentes para  a SFEAZ autorizadora|
-|/nfce/emitir|POST|Cria a NFCe SINCRONO, requer apenas esta chamada geralmente|
-|/nfce/cancelar|POST|Solicita o cancelamento da NFCe|
-|/nfce/inutilizar|POST|Solicita a inutilização de faixa de Números|
-|/nfce/substituir|POST|Solicita a Substituição de uma NFCe por outra|
+|[/nfce/situacao](SITUACAO.md)|POST|Busca o status da Sefaz autorizadora|
+|[/nfce/consultar](CONSULTAR.md)|POST|Consulta o registo na base de dados e se necessário o recibo ou chave da NFCe na SEFAZ|
+|[/nfce/pdf](PDF.md)|POST|Cria o PDF da DANFCE|
+|[/nfce/offline](OFFLINE.md)|POST|Processa as NFCe emitidas em contingência OFFLINE, enviando todas as NFCe pendentes para  a SFEAZ autorizadora|
+|[/nfce/emitir](EMITIR.md)|POST|Cria a NFCe SINCRONO, requer apenas esta chamada geralmente|
+|[/nfce/cancelar](CANCELAR.md)|POST|Solicita o cancelamento da NFCe|
+|[/nfce/inutilizar](INUTILIZAR.md)|POST|Solicita a inutilização de faixa de Números|
+|[/nfce/substituir](SUBSTITUIR.md)|POST|Solicita a Substituição de uma NFCe por outra|
 
 
 ### Critérios basicos para as operações com NFe NFCe
@@ -146,8 +146,3 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
     "????": "aqui podem ser retornados varias informações, em diferentes formatos, dependendo da rota"
 }
 ```
-
-
-## Payload das Rotas
-
-[Rota Situação](SITUACAO.md)

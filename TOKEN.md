@@ -10,26 +10,11 @@ Esse token é criado pelo comando artisan "php artisan token:create" e o valor d
 
 ## Token de Emitente
 
-Gerado pela rota "/token"
+Gerado pela rota "/token/{id}"
 
 ## Envio
 
-```json
-{
-    "ambiente": "homologacao",
-    "contingencia": {
-        "datahora": "2021-02-17T15:55:20-03:00",
-        "motivo": "Sefaz autorizadora fora do ar"
-    },
-}
-```
-
-|Parametro|Tipo|Descrição|Observação|
-|:---|:---:|:---|:---|
-|ambiente|string|define em qual ambiente o processo ocorrerá|Opcional homologacao(default) ou producao|
-|contingencia|objeto|contem a datahora de entrada em contingência e o motivo|Opcional|
-
-*NOTA: nenhum dos campos do json irá alterar o resultado desta operação, ambos parametros são ignorados.*
+Esta rota é GET, sem json de envio
 
 ## Retorno
 
@@ -49,4 +34,3 @@ Gerado pela rota "/token"
 |codigo|string|Código de retorno|podem ser os codigos retornados pela SEFAZ ou algum codigo interno da API|
 |mensagem|string|Descrição da resposta|podem ser descritivos retornados pela SEFAZ ou alguma mensagem de erro interno da API|
 |token|string|Token do emitente|gravado na tabela do emitente da API e deve ser usado no header das chamadas a API|
-
