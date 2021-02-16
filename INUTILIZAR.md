@@ -1,1 +1,6 @@
-# Rota Inutilizar
+# Rota Inutilizar (NFe/NFCe)
+
+**POST** /nfe/inutilizar
+
+**POST** /nfce/inutilizar
+

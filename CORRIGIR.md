@@ -1,1 +1,4 @@
-# Rota Corrigir
+# Rota Corrigir (NFe apenas)
+
+**POST** /nfe/corrigir
+

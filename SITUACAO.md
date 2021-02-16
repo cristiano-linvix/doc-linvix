@@ -1,6 +1,11 @@
 
 # Rota Situação
 
+**POST** /nfe/situacao
+
+**POST** /nfce/situacao
+
+
 Consulta o status do Webservice da SEFAZ (Nfe/Nfce).
 
 **NOTA: é muito importante que não se consuma esse processo de forma aleatória ou indiscrimiada, limite o numero de consultas e garanta um intervalo minimo de pelo menos 5 minutos entre cada consulta. É recomendável que esse tipo de consulta não seja feita pelo usuário, mas por um processo interno do ERP que leve em consideração as limitações impostas pela SEFAZ.**

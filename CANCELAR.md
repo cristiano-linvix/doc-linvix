@@ -1,5 +1,9 @@
 # Rota Cancelar (NFe/NFCe)
 
+**POST** /nfe/cancelar
+
+**POST** /nfce/cancelar
+
 As chamadas para essa rota solicitam o cancelamento do docuemento fiscal
 
 *NOTA: somente podem ser cancelados documentos que estão autorizados e presentes na base de dados da API, caso tente cancelar um documento não autorizado (denegado/cancelado/indefinido) um erro será retornado.*

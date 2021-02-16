@@ -1,5 +1,7 @@
 # Tokens
 
+**GET** /token/{id}
+
 Existem dois tipos de token, cada um com as suas permissões implicitas.
 
 ## Token de Softhouse
