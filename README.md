@@ -50,7 +50,7 @@ Este documento contẽm a documentação básica da API para geração de docume
 |token|string(150)||NULL|Token de acesso gerado posteriormente pela chamada da rota /token|
 |certificado|longText||NULL|Certificado A1 pfx, codificado em base64|
 |senha|string(25)||NULL|Senha do certificado (não usar caracteres acentuados e/ou de controle|
-|validade|date|||NULL|Data de validade do certificado (será gerado automaticamente, com a geração do Token)|
+|validade|date||NULL|Data de validade do certificado (será gerado automaticamente, com a geração do Token)|
 
 
 |Rota|Método|Descrição|
