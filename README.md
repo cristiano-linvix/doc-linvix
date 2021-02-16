@@ -2,7 +2,7 @@
 
 Este documento contẽm a documentação básica da API para geração de documentos fiscais (NFe e NFCe) desenvolvido para a Linvix.
 
-## Infra-estrutura 
+## Infra-estrutura
 - Lumen Framework
 - Instalação em ambiente de vps (nuvem)
 - Segurança por token (JWT)
@@ -50,7 +50,7 @@ Este documento contẽm a documentação básica da API para geração de docume
 |token|string(150)||NULL|Token de acesso gerado posteriormente pela chamada da rota /token|
 |certificado|longText||NULL|Certificado A1 pfx, codificado em base64|
 |senha|string(25)||NULL|Senha do certificado (não usar caracteres acentuados e/ou de controle|
-|validade|date||NULL|Data de validade do certificado (será gerado automaticamente, com a geração do Token)|
+|validade|date||NULL|Data de validade do certificado (será gerado automaticamente, com a geração do token)|
 
 
 |Rota|Método|Descrição|
@@ -65,12 +65,11 @@ Este documento contẽm a documentação básica da API para geração de docume
 
 - O id indicado na rota, refere-se ao ID da tabela 'emitentes'.
 
-*NOTA: Caso não exista o certificado ou o mesmo esteja vencido o token NÃO SERÁ criado !!*
-
-- O token gerado por essa rota, será passado no header das chamadas HTTP e identifica o emitente na API.
+- O token de emitente, gerado por essa rota, será passado no header das chamadas HTTP e identifica o emitente na API.
 
 - Novas chamadas a esta rota irão RECRIAR o token e dasativar o token gerado anteriormente.
 
+*NOTA: Caso não exista o certificado ou o mesmo esteja vencido o token NÃO SERÁ criado !!, e portanto o emitente não terá acesso as rotas.*
 
 ### Rotas da NFe
 
@@ -107,7 +106,7 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
 ### Critérios basicos para as operações com NFe NFCe
 
 - Autenticação por TOKEN JWT do EMITENTE, criado pela rota "/token/{id}".
-- Os campos dos json, tanto no envio como nos retornos estarão em portugues brasileiro, para efeito de compreensão.
+- Os campos dos json, tanto no envio como nos retornos estarão em português brasileiro, para efeito de melhor compreensão.
 - Todas as chamadas usam apenas o método POST, e todas devem conter um json com:
 
 ```
@@ -119,37 +118,4 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
 
 ## Payload das Rotas
 
-### Situação do Webservice da SEFAZ (Nfe/Nfce)
-
-#### Envio
-
-```json
-{
-    "ambiente": "homologacao",
-    "contingencia": false
-}
-```
-
-|Parametro|Tipo|Descrição|Observação|
-|:---|:---:|:---|:---|
-|ambiente|string|define em qual ambiente o processo ocorrerá|homologacao ou producao|
-|contingencia|boolean|Opcional indica se queremos o status da SEFAZ autorizadora (false) ou do ambiente de contingência (true)|false ou true|
-
-*NOTA: no caso das NFCe o parametro contringência, não tem efeito e é ignorado.*
-
-#### Retorno
-
-```json
-{
-    "sucesso": true,
-    "codigo": 107,
-    "mensagem": "Serviço em operação"
-}
-
-```
-
-|Parametro|Tipo|Descrição|Observação|
-|:---|:---:|:---|:---|
-|sucesso|boolean|Indica a condição da resposta|pode ser true ou false se algum problema ocorreu|
-|codigo|string|Código de retorno|podem ser os codigos retornados pela SEFAZ ou algum codigo interno da API|
-|mensagem|string|Descrição da resposta|podem ser descritivos retornados pela SEFAZ ou alguma mensagem de erro interno da API|
+[Rota Situação](SITUACAO.md)
