@@ -111,10 +111,22 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
 
 ```
 {
-    "ambiente": "homologacao", //pissiveis homologacao ou producao
+    "ambiente": "homologacao",
     ...
 }
 ```
+
+- Todos os retornos das chamas da API conterão:
+
+```
+{
+    "sucesso": true,
+    "codigo": "99999",
+    "mensagem": "mensagem relativa a operação",
+    "????": "aqui podem ser retornados varias informações, em diferentes formatos, dependendo da rota"
+}
+```
+
 
 ## Payload das Rotas
 
