@@ -10,6 +10,7 @@ Este documento contẽm a documentação básica da API para geração de docume
 - Padrão HTTP Restful (json UTF8)
 - Linguagem de programação PHP 7.4/8.0
 - Ambiente Linux (Debian 10)
+- Base de dados propria da API (acesso compartilhado com o ERP)
 - Modelagem da base de dados usando o padrão “Eloquent” (Lumen)
 
 
