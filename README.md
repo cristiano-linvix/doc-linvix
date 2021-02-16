@@ -3,19 +3,39 @@
 Este documento contẽm a documentação básica da API para geração de documentos fiscais (NFe e NFCe) desenvolvido para a Linvix.
 
 ## Infra-estrutura
-- Lumen Framework
-- Instalação em ambiente de vps (nuvem)
-- Segurança por token (JWT)
+- Lumen Framework (última versão estável)
+- Possibilidade de instalação em ambiente de vps (nuvem)
+- Segurança de acesso por token (JWT)
 - Banco de dados Postgres ou MySql ou MSSQL (UTF8)
+- Arquivamento dos documentos fiscias em bucktes S3 (AWS ou Digital Ocean)
 - Padrão HTTP Restful (json UTF8)
 - Linguagem de programação PHP 7.4/8.0
 - Ambiente Linux (Debian 10)
-- Base de dados propria da API (acesso compartilhado com o ERP)
+- Base de dados própria da API (acesso compartilhado com o ERP)
 - Modelagem da base de dados usando o padrão “Eloquent” (Lumen)
+
+## Integração
+
+É recomendável usar o [Guzzle](https://docs.guzzlephp.org/en/stable/) para realizar a integração caso seu aplicativo seja escrito em PHP, alternativamente pode usar diretamente chamadas cURL do PHP.
+
+## Instalação e configuração
+
+- Desempacotar o arquivo ZIP em uma pasta em sua maquina local (para testes locais antes de subir aos servidores)
+- Recomendável subir o pacote para um repositório GIT para manutenção, instalação e atualização dos servidores
+- Criar o arquivo .env na raiz do projeto, com as suas credenciais para o banco de dados
+- Instalar as dependências com o composer (composer install --no-dev)
+- Executar os comandos artisan:
+
+```
+
+php artisan migrate --seed
+
+php artisan token:create
+
+```
 
 
 ## Estrutura de ROTAS de acesso a API
-
 
 ### Controle dos Emitentes
 

@@ -49,7 +49,7 @@ Consulta o status do Webservice da SEFAZ (Nfe/Nfce).
 |:---:|:---|:---|
 |107|Serviço em operação|vamos em frente aparentemente tudo está funcionando na SEFAZ|
 |108|Serviço Paralisado Momentaneamente (curto prazo)|AGUARDE !!!|
-|109|Sefaz autorizadora sem previsão de reotrno|Consulte o ambiente de contingência e se estiver ativo use|
+|109|Sefaz autorizadora sem previsão de retorno|Consulte o ambiente de contingência e se estiver ativo use|
 |113|Contingência em processo de desativação|retorne ao ambiente normal|
 |114|Serviço de contingência não disponivel|AGUARDE, tenha PACIÊNCIA e consulte novamente|
 |7???|Erro no acesso ao webservice, como timeout por exemplo|Se ocorrer mais de duas vezes consecutivamente, consulte o ambiente de contingência e se estiver ativo use|
