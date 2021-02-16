@@ -12,16 +12,23 @@ Consulta o status do Webservice da SEFAZ (Nfe/Nfce).
 ```json
 {
     "ambiente": "homologacao",
-    "contingencia": false
+    "contingencia": {
+        "datahora": "2021-02-17T15:55:20-03:00",
+        "motivo": "Sefaz autorizadora fora do ar"
+    },
 }
 ```
 
 |Parametro|Tipo|Descrição|Observação|
 |:---|:---:|:---|:---|
-|ambiente|string|define em qual ambiente o processo ocorrerá|homologacao ou producao|
-|contingencia|boolean|Opcional indica se queremos o status da SEFAZ autorizadora (false) ou do ambiente de contingência (true)|false ou true|
+|ambiente|string|define em qual ambiente o processo ocorrerá|Opcional homologacao(default) ou producao|
+|contingencia|objeto|contem a datahora de entrada em contingência e o motivo|Opcional|
 
-*NOTA: no caso das NFCe o parametro contringência, não tem efeito e é ignorado.*
+*NOTA: para verificar se o ambiente de contingência está ativo, passe as informações no campo contingência, do contrário a consulta será realizada no ambiente normal.*
+
+*NOTA: para uso em contingência AMBOS os campos "datahora" e "motivo" devem ser passados, para uso em ambiente normal, NÃO passe o parametro "contingencia" ou nulifique.*
+
+*NOTA: no caso das NFCe o parametro contringência, não tem efeito e é ignorado, nesta rota.*
 
 ## Retorno
 

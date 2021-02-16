@@ -1,0 +1,1 @@
+# Rota Manifestar (somente para NFe)
