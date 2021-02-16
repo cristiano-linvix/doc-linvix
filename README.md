@@ -1,4 +1,4 @@
-# Doc Livinx
+# Doc Linvix
 
 ## Estrutura de ROTAS de acesso a API
 
