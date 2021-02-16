@@ -1,5 +1,7 @@
 # Doc Linvix
 
+Este documento contẽm a documentação básica da API para geração de documentos fiscais (NFe e NFCe) desenvolvido para a Linvix 
+
 ## Estrutura de ROTAS de acesso a API
 
 
