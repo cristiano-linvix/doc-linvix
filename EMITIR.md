@@ -4,6 +4,12 @@
 
 **POST** /nfce/emitir
 
+Visualize a documentação completa com todos os campos disponiveis no layout
+
+[Campos NFe](NFe.pdf)
+[Campos NFCe](NFCe.pdf)
+
+
 ## Envio
 
 Os payloads podem ser criados usando arrays, exemplo:
@@ -277,11 +283,6 @@ $post = [
   ]
 }
 ```
-
-Visualize a documentação completa com todos os campos disponiveis no layout
-
-[Campos NFe](NF-e - Detalhamento dos campos.pdf)
-[Campos NFCe](NFC-e - Detalhamento dos campos.pdf)
 
 
 ## Retorno
