@@ -42,8 +42,8 @@ As chamadas para essa rota solicitam o cancelamento do docuemento fiscal (lembre
     "mensagem": "Homologado o cancelamento da NF-e",
     "data_hora_evento": "2019-09-16T17:18:48-03:00",
     "protocolo": "141190000844226",
-    "xml": "PGVudjpFbnZlbG9wZSB4bWxuczplbnY9J2h...cGU+", // BASE 64
-    "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg==" // BASE 64
+    "xml": "PGVudjpFbnZlbG9wZSB4bWxuczplbnY9J2h...cGU+",
+    "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg=="
 }
 ```
 

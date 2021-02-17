@@ -6,6 +6,8 @@
 
 Esta rota solicita a inutilização de uma faixa de numeros de documentos que foram "pulados" por algum motivo.
 
+*NOTA: Os eventos de inutilização não usam ambiente em contingẽncia.*
+
 ## Envio
 
 ```json
