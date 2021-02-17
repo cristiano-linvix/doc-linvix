@@ -53,8 +53,8 @@ $post = [
     "mensagem": "Evento registrado e vinculado a NF-e",
     "data_hora_evento": "2019-09-16T17:09:02-03:00",
     "protocolo": "141190000844206",
-    "xml_carta_correcao": "PHByb2NFdmVudG9ORmUgeG1sbnM9Imh0d...5GZT4=", // BASE 64
-    "pdf_carta_correcao": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlI...AHCg==", // BASE 64
+    "xml_carta_correcao": "PHByb2NFdmVudG9ORmUgeG1sbnM9Imh0d...5GZT4=",
+    "pdf_carta_correcao": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlI...AHCg==",
     "numero_carta_correcao": 2
 }
 ```

@@ -294,11 +294,11 @@ $post = [
   "codigo": 100,
   "mensagem": "Autorizado o uso do NF-e",
   "chave": "50190813188739000110550010000012001581978549",
-  "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZ...VByb2M+", // BASE 64
-  "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg==", // BASE 64
+  "xml": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZ...VByb2M+",
+  "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg==",
   "data_hora_evento": "2019-08-30T11:25:22-04:00",
   "protocolo": "150190003925457",
-  "status": "autorizado", // autorizado ou cancelado
+  "status": "autorizado",
   "numero": "1200",
   "serie": "1"
 }
