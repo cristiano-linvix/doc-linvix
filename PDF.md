@@ -39,7 +39,7 @@ $post = [
     "sucesso": true,
     "codigo": 1001,
     "mensagem": "Sucesso.",
-    "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg==" // BASE 64
+    "pdf": "JVBERi0xLjMKMyAwIG9iago8PC9UeXBlIC9QYA+...GCg=="
 }
 ```
 
@@ -48,4 +48,4 @@ $post = [
 |sucesso|boolean|Indica a condição da resposta|pode ser true ou false se algum problema ocorreu|
 |codigo|string|Código de retorno|podem ser os codigos retornados pela SEFAZ ou algum codigo interno da API|
 |mensagem|string|Descrição da resposta|podem ser descritivos retornados pela SEFAZ ou alguma mensagem de erro interno da API|
-|pdf|string|PDF representação grafica do documento fiscal||
+|pdf|string|PDF representação grafica do documento fiscal|em base64|

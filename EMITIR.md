@@ -280,6 +280,9 @@ $post = [
 
 Visualize a documentação completa com todos os campos disponiveis no layout
 
+[Campos NFe](NF-e - Detalhamento dos campos.pdf)
+[Campos NFCe](NFC-e - Detalhamento dos campos.pdf)
+
 
 ## Retorno
 
@@ -312,4 +315,3 @@ Visualize a documentação completa com todos os campos disponiveis no layout
 |status|string|situação do documento|offline ou autorizado ou denegado ou cancelado ou indefinido|
 |numero|string|numero do docuemento fiscal||
 |serie|string|seire do documento fiscal||
-
