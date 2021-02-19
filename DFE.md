@@ -1,6 +1,6 @@
 # Doc Linvix DFe
 
-Este documento contẽm a documentação básica do serviço para busca das NFe destinadas desenvolvido para a Linvix.
+Este documento contêm a documentação básica do serviço para busca das NFe destinadas desenvolvido para a Linvix.
 
 ## Infra-estrutura
 - Lumen Framework (última versão estável)
