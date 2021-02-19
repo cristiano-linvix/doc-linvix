@@ -29,3 +29,7 @@ Cada JOB busca as NFe, e os Eventos destinados, com até 20 iterações (podem s
 **NOTA: o sincronismo entre a Receita Federal e as SEFAZ não é feito em tempo real, portanto uma NFe pode ser obtida em 2 horas ou em até dias, a depender do serviço da Receita !!!**
 
 Todos os documentos recebidos são lançados em tabelas da base de dados e o xml é salvo diretamente no S3.
+
+CUIDADOS a serem tomados:
+
+- Caso os JOBS demorem muito a terminar pode haver OVERLAPING, então existe um limite de NOVOS CNPJs que podem ser colocados ao mesmo tempo, pois o primeiro JOB é sempre muito mais demorado que os seguintes, pois estaremos buscando 3 meses de documentos no serviço, Os próximos JOBs somente tentarão pegar o que foi colocado nas ultimas 2 horas.
