@@ -24,7 +24,7 @@ Esse agendamento é iniciado em intervalos minimos de 2 horas, ao longo do dia t
 
 O "SUPERVISOR" (programa interno no linux), monitora o processo de busca das filas e inicia um ou mais processsos paralelos (essa configuração depende da capacidade de memoria e numero de processadores do servidor).
 
-Cada JOB buscar as NFe, e os Eventos destinados, com até 20 iterações (podem ser recebidos até 50x20 = 1000 documentos por JOB) em cada loop interno e manifestar a ciencia da operação (para permitir a baixa dos documentos) dos resumos de NFe que foram recebidos. Isto significa que as NFe que foram manifestadas agora, provalmente estarão disponiveis daqui a duas horas, quando o ciclo recomeçar.
+Cada JOB busca as NFe, e os Eventos destinados, com até 20 iterações (podem ser recebidos até 50x20 = 1000 documentos por JOB) em cada loop interno e manifestar a ciencia da operação (para permitir a baixa dos documentos) dos resumos de NFe que foram recebidos. Isto significa que as NFe que foram manifestadas agora, provalmente estarão disponiveis daqui a duas horas, quando o ciclo recomeçar.
 
 **NOTA: o sincronismo entre a Receita Federal e as SEFAZ não é feito em tempo real, portanto uma NFe pode ser obtida em 2 horas ou em até dias, a depender do serviço da Receita !!!**
 
