@@ -120,7 +120,6 @@ Todas as operações com NFCe são processadas pelas chamadas aqui descritas.
 |[/nfce/emitir](EMITIR.md)|POST|Cria a NFCe SINCRONO, requer apenas esta chamada geralmente|
 |[/nfce/cancelar](CANCELAR.md)|POST|Solicita o cancelamento da NFCe|
 |[/nfce/inutilizar](INUTILIZAR.md)|POST|Solicita a inutilização de faixa de Números|
-|[/nfce/substituir](SUBSTITUIR.md)|POST|Solicita a Substituição de uma NFCe por outra|
 
 
 ### Critérios basicos para as operações com NFe NFCe
