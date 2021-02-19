@@ -17,7 +17,11 @@ Os payloads podem ser criados usando arrays, exemplo:
 
 ```php
 $post = [
-    "ambiente" => "P",
+    "ambiente": "homologacao",
+    "contingencia" => [
+        "datahora" => "2021-02-17T15:55:20-03:00",
+        "motivo" => "Sefaz autorizadora fora do ar"
+    ],
     "natureza_operacao" => "VENDA DENTRO DO ESTADO",
     "serie" => "1",
     "numero" => "1035",
@@ -153,7 +157,11 @@ $post = [
 
 ```json
 {
-  "ambiente": "P",
+  "ambiente": "homologacao",
+  "contingencia": {
+    "datahora": "2021-02-17T15:55:20-03:00",
+    "motivo": "Sefaz autorizadora fora do ar"
+  },
   "natureza_operacao": "VENDA DENTRO DO ESTADO",
   "serie": "1",
   "numero": "1035",

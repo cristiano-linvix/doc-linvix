@@ -14,11 +14,11 @@ Os payloads podem ser criados usando arrays, exemplo:
 ```php
 $post = [
     "ambiente" => "homologacao",
-    "chave" => "12345678901234567890123456789012345678901234",
     "contingencia" => [
         "datahora" => '2021-02-17T15:55:20-03:00',
         "motivo" => 'Sefaz autorizadora fora do ar'
     ]
+    "chave" => "12345678901234567890123456789012345678901234"
 ];
 ```
 
@@ -26,11 +26,11 @@ $post = [
 ```json
 {
     "ambiente": "homologacao",
-    "chave": "12345678901234567890123456789012345678901234",
     "contingencia": {
         "datahora": "2021-02-17T15:55:20-03:00",
         "motivo": "Sefaz autorizadora fora do ar"
-    }
+    },
+    "chave": "12345678901234567890123456789012345678901234"
 }
 ```
 

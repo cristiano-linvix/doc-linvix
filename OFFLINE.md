@@ -16,10 +16,7 @@ Esta rota dispara o mesmo processo em fila relatado anteriormente.
 ```json
 {
     "ambiente": "homologacao",
-    "contingencia": {
-        "datahora": "2021-02-17T15:55:20-03:00",
-        "motivo": "Sefaz autorizadora fora do ar"
-    }
+    "contingencia": null
 }
 ```
 

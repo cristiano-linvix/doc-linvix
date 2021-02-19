@@ -14,6 +14,7 @@ Os payloads podem ser criados usando arrays, exemplo:
 ```php
 $post = [
     "ambiente" => "homologacao",
+    "contingencia" => null,
     "chave" => "12345678901234567890123456789012345678901234"
 ];
 ```
@@ -22,6 +23,7 @@ $post = [
 ```json
 {
     "ambiente": "homologacao",
+    "contingencia": null,
     "chave": "12345678901234567890123456789012345678901234"
 }
 ```
