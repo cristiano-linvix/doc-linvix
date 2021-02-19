@@ -32,4 +32,4 @@ Todos os documentos recebidos são lançados em tabelas da base de dados e o xml
 
 ### CUIDADOS a serem tomados:
 
-- Caso os JOBS demorem muito a terminar pode haver OVERLAPING, então existe um limite de NOVOS CNPJs que podem ser colocados ao mesmo tempo, pois o primeiro JOB é sempre muito mais demorado que os seguintes, pois estaremos buscando 3 meses de documentos no serviço, Os próximos JOBs somente tentarão pegar o que foi colocado nas ultimas 2 horas.
+- Caso os JOBS demorem muito a terminar pode haver OVERLAPING, então existe um limite de **NOVOS CNPJs que podem ser colocados ao mesmo tempo**, pois o primeiro JOB é sempre muito mais demorado que os seguintes, pois estaremos buscando 3 meses de documentos no serviço. Os próximos JOBs somente tentarão pegar o que foi colocado nas últimas 2 horas.
