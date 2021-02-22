@@ -104,7 +104,7 @@ Todas as operações com NFe são processadas pelas chamadas aqui descritas.
 |[/nfe/cancelar](CANCELAR.md)|POST|Solicita o cancelamento da NFe|
 |[/nfe/inutilizar](INUTILIZAR.md)|POST|Solicita a inutilização de faixa de Números|
 |[/nfe/corrigir](CORRIGIR.md)|POST|Solicita a Carta de Correção|
-|[/nfe/manfestar](MANIFESTAR.md)|POST|Solicita a manifestação de Destinatário|
+|[/nfe/manifestar](MANIFESTAR.md)|POST|Solicita a manifestação de Destinatário|
 
 
 ### Rotas da NFCe
